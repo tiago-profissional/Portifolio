@@ -1,0 +1,119 @@
+/* ===============================
+PORTFOLIO PROJECT CARDS
+================================ */
+
+.mil-project-card{
+  background:#0f0f0f;
+  border:1px solid rgba(255,255,255,0.08);
+  padding:30px;
+  transition:all .35s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+.mil-project-card:hover{
+  transform:translateY(-6px);
+  border-color:#ff4d2e;
+}
+
+/* project image */
+
+.mil-project-image{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:6px;
+  margin-bottom:20px;
+  transition:all .4s ease;
+}
+
+.mil-project-card:hover .mil-project-image{
+  transform:scale(1.05);
+}
+
+/* project info */
+
+.mil-project-info h3{
+  color:#fff;
+  font-size:22px;
+  font-weight:600;
+}
+
+.mil-project-info p{
+  color:#bfbfbf;
+  font-size:15px;
+  line-height:1.6;
+}
+
+/* filter menu */
+
+.mil-filter ul{
+  display:flex;
+  gap:30px;
+  list-style:none;
+  padding:0;
+}
+
+.mil-filter li{
+  cursor:pointer;
+  color:#9e9e9e;
+  font-weight:500;
+  font-size:14px;
+  transition:.25s;
+  letter-spacing:.5px;
+}
+
+.mil-filter li:hover{
+  color:#ff4d2e;
+}
+
+.mil-filter .mil-active{
+  color:#ff4d2e;
+  position:relative;
+}
+
+.mil-filter .mil-active:after{
+  content:"";
+  position:absolute;
+  bottom:-6px;
+  left:0;
+  width:100%;
+  height:2px;
+  background:#ff4d2e;
+}
+
+/* button */
+
+.mil-button{
+  display:inline-block;
+  padding:10px 22px;
+  border:1px solid #ff4d2e;
+  color:#ff4d2e;
+  font-size:13px;
+  letter-spacing:.5px;
+  transition:.3s;
+}
+
+.mil-button:hover{
+  background:#ff4d2e;
+  color:#fff;
+}
+
+/* responsive */
+
+@media (max-width:992px){
+
+  .mil-project-image{
+    height:220px;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .mil-filter ul{
+    flex-wrap:wrap;
+    gap:15px;
+  }
+
+}
