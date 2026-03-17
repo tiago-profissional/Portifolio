@@ -7,51 +7,42 @@ import { useEffect, useState } from "react";
 const blogs = [
   {
     id: 1,
-    title: "How I Built Vagas Nordestinas, a Job Board with React + PHP",
-    image: "/img/logo_vagasnordestinas.png",
-    tags: ["React", "PHP", "MySQL"],
-    date: "15 March - 2026",
-    excerpt:
-      "Vagas Nordestinas is a job board portfolio project built with React, PHP, and MySQL. The platform allows users to browse job opportunities, view job details, and explore a real-world frontend and backend structure.",
+    title: "Commodo Dolor a Bibendum",
+    image: "/img/blog/1.png",
+    tags: ["Teamwork", "Nature", "Landscape"],
+    date: "30 August - 2022",
   },
   {
     id: 2,
-    title: "Building a WordPress Job Flow with Elementor and Custom Post Types",
-    image: "/img/logo.png",
-    tags: ["WordPress", "Elementor", "CPT"],
-    date: "15 March - 2026",
-    excerpt:
-      "This project focuses on a WordPress-based job flow using custom post types, frontend job submission, dynamic templates, and a structured user experience for managing job listings.",
+    title: "Fringilla Ligula il Pharetra",
+    image: "/img/blog/2.png",
+    tags: ["Teamwork", "Nature", "Landscape"],
+    date: "30 August - 2022",
   },
   {
     id: 3,
-    title: "Creating a Developer Portfolio with Next.js",
-    image: "/img/fotohome.png",
-    tags: ["Next.js", "Portfolio", "Frontend"],
-    date: "15 March - 2026",
-    excerpt:
-      "A modern portfolio project created to showcase my development work, technical skills, and practical experience with frontend design and project presentation.",
+    title: "Morbi leo risus as porta eget",
+    image: "/img/blog/3.png",
+    tags: ["Teamwork", "Nature", "Landscape"],
+    date: "30 August - 2022",
   },
   {
     id: 4,
-    title: "Lessons Learned While Building Real Portfolio Projects",
-    image: "/img/certificate.jpg",
-    tags: ["Projects", "Learning", "Development"],
-    date: "15 March - 2026",
-    excerpt:
-      "A summary of the main lessons I learned while building practical portfolio projects, including planning, UI decisions, backend integration, and project organization.",
+    title: "Fringilla Ligula il Pharetra",
+    image: "/img/blog/1.png",
+    tags: ["Teamwork", "Nature", "Landscape"],
+    date: "30 August - 2022",
   },
 ];
 
 const page = () => {
-  const sort = 2;
+  let sort = 2;
   const [active, setActive] = useState(1);
-  const [state, setState] = useState([]);
-
+  const [state, setstate] = useState([]);
   useEffect(() => {
     tretoUtility.pagination(".mil-blog-card", sort, active);
-    const list = document.querySelectorAll(".mil-blog-card");
-    setState(tretoUtility.getPagination(list.length, sort));
+    let list = document.querySelectorAll(".mil-blog-card");
+    setstate(tretoUtility.getPagination(list.length, sort));
   }, [active]);
 
   return (
@@ -65,28 +56,26 @@ const page = () => {
           <div className="container">
             <div className="mil-top-banner">
               <p className="mil-upper mil-mb-30">
-                Project <span className="mil-accent">articles</span>
+                News and <span className="mil-accent">articles</span>
               </p>
-              <h2 className="mil-up mil-mb-30">Development Insights</h2>
+              <h2 className="mil-up mil-mb-30">Latest Blog</h2>
               <p className="mil-left-offset">
-                A selection of project breakdowns and technical case studies
-                based on my portfolio work with React, PHP, MySQL, WordPress,
-                and modern frontend development.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor <br /> incididunt ut labore et dolore magna
+                aliqua.
               </p>
             </div>
-
             <div className="mil-blog-list mil-mb-90">
               {blogs.map((blog) => (
                 <div className="mil-blog-card mil-mb-60" key={blog.id}>
                   <div className="mil-cover">
                     <Link legacyBehavior href={`/blog/${blog.id}`}>
                       <a>
-                        <img src={blog.image} alt={blog.title} />
+                        <img src={blog.image} alt="cover" />
                       </a>
                     </Link>
                     <div className="mil-date mil-upper">{blog.date}</div>
                   </div>
-
                   <div className="mil-title">
                     <div>
                       <p className="mil-upper mil-mb-30">
@@ -96,29 +85,28 @@ const page = () => {
                       </p>
                       <h3 className="mil-up mil-mb-30">{blog.title}</h3>
                     </div>
-
                     <div>
                       <Link legacyBehavior href={`/blog/${blog.id}`}>
                         <a className="mil-button mil-type-2">Read more</a>
                       </Link>
                     </div>
                   </div>
-
                   <div className="mil-card-text">
-                    <p>{blog.excerpt}</p>
+                    <p>
+                      It was popularised in the 1960s with the release of
+                      Letraset sheets containing Lorem Ipsum passages, and more
+                      recently with desktop publishing software like Aldus
+                      PageMaker including versions of Lorem ..
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
-
             <div className="mil-pagination-panel">
               <ul className="mil-pagination-numbers">
                 {state &&
                   state.map((s, i) => (
-                    <li
-                      className={active === s ? "mil-active" : ""}
-                      key={`pagination-item-${i}`}
-                    >
+                    <li className={`${active === s ? "mil-active" : ""}`} key={`paginatio-item-${i}`}>
                       <a
                         href="#"
                         onClick={(e) => {
@@ -131,7 +119,6 @@ const page = () => {
                     </li>
                   ))}
               </ul>
-
               <div className="mil-pagination-nav">
                 <div className="mil-slider-nav mil-mb-30">
                   <a
@@ -153,10 +140,9 @@ const page = () => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
-                      <polyline points="15 18 9 12 15 6" />
+                      <polyline points="9 18 15 12 9 6" />
                     </svg>
                   </a>
-
                   <a
                     href="#."
                     className="mil-next mil-reviews-next"
@@ -182,7 +168,6 @@ const page = () => {
                     </svg>
                   </a>
                 </div>
-
                 <div className="mil-reviews-pagination mil-upper mil-mb-30" />
               </div>
             </div>
@@ -192,5 +177,4 @@ const page = () => {
     </TretoLayout>
   );
 };
-
 export default page;
