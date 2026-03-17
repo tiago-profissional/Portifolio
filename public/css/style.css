@@ -2261,3 +2261,336 @@ contact
 .mil-contact-card a:hover {
   color: #fa4729;
 }
+
+
+/* ================================
+   AJUSTE DE LAYOUT TRETO
+   cole no FINAL do CSS
+================================ */
+
+/* deixa o conteúdo mais largo */
+.container {
+  width: 100%;
+  max-width: 1400px !important;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
+}
+
+.container-full {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* melhora a área geral da página */
+.mil-page {
+  margin: 10px;
+}
+
+/* banner mais equilibrado no desktop */
+.mil-banner .mil-banner-text {
+  padding: 0 12% 0 8%;
+}
+
+.mil-banner.mil-banner-right .mil-banner-text {
+  padding: 0 8% 0 12%;
+}
+
+/* mantém o visual desktop por mais tempo */
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .mil-left-offset,
+  .mil-left-offset-xsm,
+  .mil-left-offset-sm,
+  .mil-left-offset-md,
+  .mil-left-offset-lg {
+    padding: 0;
+  }
+
+  .mil-text-right-adapt,
+  .mil-text-center-adapt {
+    text-align: left;
+  }
+
+  .mil-op-space-90 {
+    padding-top: 0;
+    padding-bottom: 90px;
+  }
+
+  .mil-op-space-60 {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
+  .mil-op-space-30 {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+
+  .mil-frame {
+    margin: 0 10px;
+    height: 100%;
+  }
+
+  .mil-onepage .mil-section {
+    height: auto;
+  }
+
+  .mil-onepage .mil-section .container {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  .mil-custom-scroll {
+    overflow: scroll;
+  }
+
+  .mil-page {
+    margin: 0;
+  }
+
+  .mil-pagination {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .mil-bg-item,
+  .mil-bg-title-boxed {
+    display: none;
+  }
+
+  .mil-top-panel {
+    background-color: #fff;
+  }
+
+  .mil-top-panel.mil-active {
+    background-color: #fff;
+    box-shadow: none;
+  }
+
+  .mil-top-panel .mil-social {
+    display: none;
+  }
+
+  .mil-top-panel nav {
+    opacity: 0;
+    pointer-events: none;
+    padding: 30px 0;
+    border: none;
+    position: absolute;
+    background-color: #fff;
+    top: 90px;
+    width: 100%;
+    border-bottom: solid 2px rgba(16, 16, 16, 0.18);
+    transform: scale(0.9) translateY(-5px);
+    transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  }
+
+  .mil-top-panel nav.mil-active {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1) translateY(0);
+  }
+
+  .mil-top-panel nav ul {
+    flex-direction: column;
+  }
+
+  .mil-top-panel nav ul li {
+    flex-direction: column;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .mil-top-panel nav ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .mil-top-panel nav ul li.mil-active:after {
+    display: none;
+  }
+
+  .mil-top-panel nav ul li ul {
+    border: none;
+    background-color: #f3f3f3;
+    padding: 0;
+    position: static;
+    width: 100%;
+    max-height: 0;
+  }
+
+  .mil-top-panel nav ul li ul li:first-child {
+    margin-top: 30px;
+  }
+
+  .mil-top-panel nav ul li ul li:last-child {
+    margin-bottom: 30px;
+  }
+
+  .mil-top-panel nav ul li:hover ul {
+    max-height: 400px;
+    margin-top: 15px;
+  }
+
+  .mil-top-panel.mil-tp-2 .mil-tp-frame {
+    justify-content: space-between;
+  }
+
+  .mil-menu-btn {
+    display: flex;
+  }
+
+  .mil-top-banner {
+    padding-top: 170px;
+    padding-bottom: 60px;
+  }
+
+  .mil-top-banner p br {
+    display: none;
+  }
+
+  .mil-banner {
+    padding-top: 90px;
+    margin-bottom: 60px;
+  }
+
+  .mil-banner .mil-banner-image {
+    height: 60vh;
+  }
+
+  .mil-banner .mil-banner-text,
+  .mil-banner.mil-banner-right .mil-banner-text {
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .mil-banner .mil-short {
+    max-width: 100%;
+  }
+
+  .mil-about-person {
+    display: none;
+  }
+
+  .mil-about-person-2 .mil-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .mil-timeline-nav,
+  .mil-reviews-nav {
+    margin-top: 30px;
+    border: none;
+    border-top: solid 2px #101010;
+    padding: 0;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mil-timeline-nav::after,
+  .mil-reviews-nav::after {
+    display: none;
+  }
+
+  .mil-timeline-nav .mil-timeline-pagination,
+  .mil-reviews-nav .mil-timeline-pagination,
+  .mil-timeline-nav .mil-reviews-pagination,
+  .mil-reviews-nav .mil-reviews-pagination {
+    text-align: right;
+  }
+
+  .mil-timeline-nav-2 {
+    justify-content: flex-start;
+  }
+
+  .mil-client {
+    width: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 40px;
+  }
+
+  .mil-publication {
+    padding-top: 170px;
+  }
+}
+
+/* portfolio continua bonito em telas médias */
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  .mil-menu-btn {
+    display: none;
+  }
+
+  .mil-top-panel nav {
+    opacity: 1 !important;
+    pointer-events: all !important;
+    position: relative;
+    top: auto;
+    width: auto;
+    transform: none;
+    background: transparent;
+    border-bottom: solid 2px #010101;
+    padding: 0 40px 0 30px;
+  }
+
+  .mil-top-panel nav ul {
+    flex-direction: row;
+  }
+
+  .mil-top-panel nav ul li {
+    flex-direction: row;
+    height: 80px;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  .mil-top-panel nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  .mil-top-panel .mil-social {
+    display: block;
+  }
+
+  .mil-bg-item,
+  .mil-bg-title-boxed {
+    display: block;
+  }
+
+  .mil-banner .mil-banner-text {
+    text-align: left;
+    padding: 0 10% 0 8%;
+  }
+
+  .mil-banner.mil-banner-right .mil-banner-text {
+    text-align: left;
+    padding: 0 8% 0 10%;
+  }
+}
+
+/* telas muito grandes */
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1520px !important;
+  }
+
+  .mil-frame {
+    margin: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+  }
+}
