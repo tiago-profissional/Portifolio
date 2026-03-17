@@ -1,0 +1,8 @@
+node_modules/
+treto/node_modules/
+.next/
+treto/.next/
+out/
+treto/out/
+.env
+.env.local
