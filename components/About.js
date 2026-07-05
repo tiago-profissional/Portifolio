@@ -30,18 +30,19 @@ const About = () => {
                 <h2 className="mil-up mil-mb-60">Tiago Ramon</h2>
 
                 <p className="mil-mb-30">
-                  Brazilian developer with 1 year of experience building web
-                  applications using PHP, React, Bootstrap, Sass and WordPress.
-                  I also design interfaces and application flows using Figma
-                  and system flowcharts before implementation.
+                  I am a Brazilian developer focused on building real-world web
+                  applications with React, Next.js, TypeScript, Node.js, PHP,
+                  MySQL and WordPress. I create projects that simulate
+                  production platforms, including dashboards, APIs, databases
+                  and responsive interfaces.
                 </p>
 
                 <p className="mil-mb-30">
-                  My experience includes building full stack applications with
-                  PHP and MySQL on the backend, creating APIs, managing
-                  databases and developing responsive interfaces with modern
-                  frontend technologies. I focus on creating practical projects
-                  that simulate real production platforms.
+                  I developed projects such as a job board platform, a React +
+                  PHP vacancies system and AI-powered features for resume
+                  analysis, job matching and smart candidate feedback. My goal
+                  is to combine clean interfaces, backend logic and AI tools to
+                  solve practical problems.
                 </p>
 
                 <div className="mil-buttons-frame">
@@ -87,7 +88,9 @@ export const About2 = () => {
                   </div>
 
                   <p className="mil-upper mil-mb-30">
-                    WordPress <span className="mil-accent">and</span> Full Stack Developer
+                    Full Stack Developer{" "}
+                    <span className="mil-accent">and</span> AI-Powered
+                    Applications Builder
                   </p>
 
                   <h2 className="mil-up mil-mb-30">Tiago Ramon</h2>
@@ -96,11 +99,18 @@ export const About2 = () => {
                     <div className="col-xl-8">
                       <div className="mil-text-center">
                         <p className="mil-mb-30">
-                          Developer focused on building modern web applications
-                          using WordPress, React and PHP. I work with backend
-                          development using PHP and MySQL, interface design in
-                          Figma, and planning application architecture through
-                          flowcharts and structured system design.
+                          I build modern web applications using React, Next.js,
+                          TypeScript, Node.js, PHP, MySQL and WordPress. My work
+                          includes job board platforms, dashboards, API
+                          integrations, responsive interfaces and AI-powered
+                          features.
+                        </p>
+
+                        <p className="mil-mb-30">
+                          My goal is to grow as a full stack developer by
+                          building practical products that solve real problems,
+                          combining clean user interfaces, structured backend
+                          logic and modern AI tools.
                         </p>
 
                         <img

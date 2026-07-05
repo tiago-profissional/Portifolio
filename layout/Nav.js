@@ -16,18 +16,6 @@ const Nav = () => {
             }
           >
             <Link legacyBehavior href="/">Home</Link>
-            <ul>
-              <li>
-                <Link legacyBehavior href="/">
-                  Type 1
-                </Link>
-              </li>
-              <li>
-                <Link legacyBehavior href="/index-2">
-                  Type 2
-                </Link>
-              </li>
-            </ul>
           </li>
           <li className={pathname == "/prices" ? "mil-active" : ""}>
             <Link legacyBehavior href="/prices">
@@ -41,7 +29,7 @@ const Nav = () => {
           </li>
           <li className={pathname == "/blog" ? "mil-active" : ""}>
             <Link legacyBehavior href="/blog">
-              Blog
+              About Me
             </Link>
           </li>
           <li className={pathname == "/contact" ? "mil-active" : ""}>

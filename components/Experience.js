@@ -25,24 +25,47 @@ const Experience = () => {
         <div className="row">
           <div className="col-lg-6">
             <p className="mil-mb-60">
-              1 year of practical experience building web applications and
-              portfolio projects using React, PHP, MySQL and WordPress,
-              focusing on problem solving and modern development practices.
+              Practical experience gained through mentored web development work
+              and real portfolio projects. This year, I started building job
+              boards, responsive interfaces, API integrations, dashboards and
+              AI-powered features while improving my problem-solving,
+              architecture and product thinking.
             </p>
           </div>
 
           <div className="col-lg-6">
             <div className="mil-timeline-nav-2">
               <div className="mil-timeline-2-pagination mil-upper mil-mb-30" />
+
               <div className="mil-slider-nav mil-mb-30">
                 <div className="mil-prev mil-timeline-2-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <polyline points="9 18 15 12 9 6" />
                   </svg>
                 </div>
 
                 <div className="mil-next mil-timeline-2-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <polyline points="9 18 15 12 9 6" />
                   </svg>
                 </div>
@@ -57,19 +80,23 @@ const Experience = () => {
               {...sliderProps.timelineSlider}
               className="swiper-container mil-timeline-slider-2"
             >
-
               <SwiperSlide className="swiper-slide">
                 <div className="mil-icon-box mil-type-2 mil-mb-30">
                   <div className="mil-box-text">
                     <p className="mil-upper mil-text-lg mil-mb-15">
-                      Freelance & Portfolio Projects
+                      Mentored Web Development
                     </p>
+
                     <p className="mil-upper mil-mb-30">
-                      2024 <span className="mil-accent">to</span> Present
+                      March 2024 <span className="mil-accent">to</span> May
+                      2025
                     </p>
+
                     <p>
-                      Building real projects with React, PHP, MySQL and
-                      WordPress while solving practical development challenges.
+                      Worked under senior mentorship on real web development
+                      tasks, improving frontend implementation, responsive
+                      layouts, WordPress, PHP, React and professional coding
+                      practices.
                     </p>
                   </div>
                 </div>
@@ -79,14 +106,37 @@ const Experience = () => {
                 <div className="mil-icon-box mil-type-2 mil-mb-30">
                   <div className="mil-box-text">
                     <p className="mil-upper mil-text-lg mil-mb-15">
-                      Frontend Development
+                      Vagas Nordestinas Platform
                     </p>
+
                     <p className="mil-upper mil-mb-30">
-                      2023 <span className="mil-accent">to</span> Present
+                      2026 <span className="mil-accent">to</span> Present
                     </p>
+
                     <p>
-                      Developing responsive interfaces with HTML, CSS, Sass,
-                      Bootstrap and modern JavaScript frameworks.
+                      Developed a job board platform with React.js, PHP and
+                      MySQL, including job creation, editing, dynamic routing,
+                      API integration, database management and responsive pages.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide className="swiper-slide">
+                <div className="mil-icon-box mil-type-2 mil-mb-30">
+                  <div className="mil-box-text">
+                    <p className="mil-upper mil-text-lg mil-mb-15">
+                      Frontend Development Practice
+                    </p>
+
+                    <p className="mil-upper mil-mb-30">
+                      2026 <span className="mil-accent">to</span> Present
+                    </p>
+
+                    <p>
+                      Built responsive interfaces using HTML, CSS, Sass,
+                      Bootstrap, JavaScript, React and Next.js, focusing on
+                      clean UI, usability, layout structure and user experience.
                     </p>
                   </div>
                 </div>
@@ -98,12 +148,16 @@ const Experience = () => {
                     <p className="mil-upper mil-text-lg mil-mb-15">
                       API & Backend Practice
                     </p>
+
                     <p className="mil-upper mil-mb-30">
-                      2024 <span className="mil-accent">to</span> Present
+                      2026 <span className="mil-accent">to</span> Present
                     </p>
+
                     <p>
-                      Creating and integrating REST APIs using PHP and MySQL
-                      with CRUD operations and data validation.
+                      Created and integrated REST APIs with PHP, MySQL and
+                      structured data flow, practicing CRUD operations,
+                      validation, database queries and frontend-backend
+                      communication.
                     </p>
                   </div>
                 </div>
@@ -113,19 +167,21 @@ const Experience = () => {
                 <div className="mil-icon-box mil-type-2 mil-mb-30">
                   <div className="mil-box-text">
                     <p className="mil-upper mil-text-lg mil-mb-15">
-                      WordPress Development
+                      AI-Powered Applications
                     </p>
+
                     <p className="mil-upper mil-mb-30">
-                      2024 <span className="mil-accent">to</span> Present
+                      2026 <span className="mil-accent">to</span> Present
                     </p>
+
                     <p>
-                      Building dynamic WordPress solutions with custom post
-                      types, Elementor templates and job board systems.
+                      Building AI-powered features with Next.js, TypeScript and
+                      AI integrations, including resume analysis, job matching,
+                      smart recommendations and candidate feedback.
                     </p>
                   </div>
                 </div>
               </SwiperSlide>
-
             </Swiper>
           </div>
         </div>

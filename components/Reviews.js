@@ -2,6 +2,26 @@ import { sliderProps } from "@/utility/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Reviews = () => {
+  const logoBoxStyle = {
+    width: "260px",
+    height: "260px",
+    position: "relative",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
+  const logoStyle = {
+    width: "90px",
+    height: "90px",
+    objectFit: "contain",
+    position: "absolute",
+    top: "52%",
+    left: "58%",
+    transform: "translate(-50%, -50%)",
+    display: "block",
+  };
+
   return (
     <div className="mil-section mil-op-space-90">
       <div
@@ -19,7 +39,7 @@ const Reviews = () => {
 
           <p className="mil-mb-60">
             Real project experience and development contributions delivered for
-            web platforms and business solutions.
+            web platforms, business solutions and AI-powered applications.
           </p>
         </div>
 
@@ -33,17 +53,13 @@ const Reviews = () => {
             >
               {/* SLIDE 1 — MOVEFLOOR */}
               <SwiperSlide className="swiper-slide">
-                <div className="row">
+                <div className="row align-items-center">
                   <div className="col-lg-3">
-                    <div className="mil-client">
+                    <div className="mil-client" style={logoBoxStyle}>
                       <img
                         src="/img/movefloor.png"
                         alt="Movefloor project"
-                        style={{
-                          width: "120px",
-                          height: "120px",
-                          objectFit: "contain",
-                        }}
+                        style={logoStyle}
                       />
                     </div>
                   </div>
@@ -69,17 +85,13 @@ const Reviews = () => {
 
               {/* SLIDE 2 — VAGAS NORDESTINAS */}
               <SwiperSlide className="swiper-slide">
-                <div className="row">
+                <div className="row align-items-center">
                   <div className="col-lg-3">
-                    <div className="mil-client">
+                    <div className="mil-client" style={logoBoxStyle}>
                       <img
                         src="/img/logo_vagasnordestinas.png"
                         alt="Vagas Nordestinas"
-                        style={{
-                          width: "120px",
-                          height: "120px",
-                          objectFit: "contain",
-                        }}
+                        style={logoStyle}
                       />
                     </div>
                   </div>
@@ -100,6 +112,40 @@ const Reviews = () => {
 
                     <p className="mil-mb-30">
                       Fullstack Project — React / PHP / MySQL
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              {/* SLIDE 3 — AI-POWERED VAGAS NORDESTINAS */}
+              <SwiperSlide className="swiper-slide">
+                <div className="row align-items-center">
+                  <div className="col-lg-3">
+                    <div className="mil-client" style={logoBoxStyle}>
+                      <img
+                        src="/img/logo_vagasnordestinas.png"
+                        alt="AI-Powered Vagas Nordestinas"
+                        style={logoStyle}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="col-lg-1" />
+
+                  <div className="col-lg-7">
+                    <p className="mil-mb-30">
+                      Expanded Vagas Nordestinas with AI-powered application
+                      features, including resume analysis, job matching, smart
+                      recommendations and intelligent candidate feedback to
+                      improve the job search and application experience.
+                    </p>
+
+                    <p className="mil-upper mil-text-lg mil-mb-15">
+                      AI-Powered <span className="mil-accent">Applications</span>
+                    </p>
+
+                    <p className="mil-mb-30">
+                      AI Project — Next.js / TypeScript / Node.js / AI
                     </p>
                   </div>
                 </div>

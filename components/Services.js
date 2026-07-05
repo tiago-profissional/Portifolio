@@ -22,13 +22,16 @@ const Services = () => {
               <div className="mil-text-icon">
                 <i className="fas fa-code" />
               </div>
+
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
-                  Web Development
+                  Full Stack Web Development
                 </p>
+
                 <p>
-                  Development of modern web applications using React, PHP and
-                  MySQL with clean architecture and responsive design.
+                  Development of modern web applications using Next.js,
+                  TypeScript, Node.js, Python, FastAPI and databases, with clean
+                  architecture, API integration and responsive design.
                 </p>
               </div>
             </div>
@@ -39,13 +42,16 @@ const Services = () => {
               <div className="mil-text-icon">
                 <i className="fas fa-laptop-code" />
               </div>
+
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
                   Frontend Development
                 </p>
+
                 <p>
-                  Responsive interfaces using HTML, CSS, Sass, Bootstrap and
-                  JavaScript with focus on performance and usability.
+                  Responsive and modern interfaces using React, Next.js,
+                  TypeScript, Tailwind CSS, Sass and Bootstrap, with focus on
+                  usability, performance and clean user experience.
                 </p>
               </div>
             </div>
@@ -54,15 +60,18 @@ const Services = () => {
           <div className="col-xl-4">
             <div className="mil-icon-box mil-mb-30">
               <div className="mil-text-icon">
-                <i className="fab fa-wordpress" />
+                <i className="fas fa-robot" />
               </div>
+
               <div className="mil-box-text">
                 <p className="mil-upper mil-text-lg mil-mb-15">
-                  WordPress Development
+                  AI-Powered Applications
                 </p>
+
                 <p>
-                  Custom WordPress solutions including job boards, dynamic
-                  content, Elementor templates and custom post types.
+                  Building intelligent features such as resume analysis, job
+                  matching, smart recommendations, candidate feedback and
+                  AI-assisted workflows inside web platforms.
                 </p>
               </div>
             </div>

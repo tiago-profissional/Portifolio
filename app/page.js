@@ -21,7 +21,7 @@ const Index = () => {
     <TretoLayout header={1}>
       <div className="mil-onepage">
         {/* banner */}
-        <Banner bgImage="img/faces/5.jpg" />
+        <Banner bgImage="img/fotohome.png" />
         {/* banner end */}
         {/* about */}
         <About />
